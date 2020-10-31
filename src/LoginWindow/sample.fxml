@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane_userLogin" nodeOrientation="LEFT_TO_RIGHT" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginWindow.Controller">
+      <children>
+      <VBox alignment="CENTER" layoutX="570.0" layoutY="230.0" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group layoutX="50.0" layoutY="50.0">
+               <children>
+                  <Label fx:id="lbl_status" alignment="CENTER" layoutX="530.0" layoutY="180.0" text="Status:" textFill="RED" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="520.0" layoutY="232.0" text="Username:">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="520.0" layoutY="293.0" text="Password:">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txtField_username" layoutX="664.0" layoutY="232.0" prefHeight="35.0" prefWidth="188.0" scaleShape="false">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <PasswordField fx:id="txtField_password" layoutX="666.0" layoutY="293.0" prefHeight="35.0" prefWidth="188.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </PasswordField>
+                  <Button fx:id="btn_login" alignment="CENTER" layoutX="715.0" layoutY="351.0" mnemonicParsing="false" onAction="#btn_login_clicked" prefHeight="35.0" prefWidth="137.0" text="Login">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Hyperlink fx:id="hyp_forgotPassword" alignment="CENTER" layoutX="528.0" layoutY="414.0" text="Forgot Password?" underline="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Hyperlink>
+                  <Hyperlink fx:id="hyp_register" alignment="CENTER" layoutX="702.0" layoutY="414.0" text="New here? Register" underline="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Hyperlink>
+               </children>
+            </Group>
+         </children>
+      </VBox>
+      </children>
+      <cursor>
+          <Cursor fx:constant="DEFAULT" />
+      </cursor>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+  </AnchorPane>

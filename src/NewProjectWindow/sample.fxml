@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="565.0" prefWidth="1056.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewProjectWindow.Controller">
+   <children>
+      <VBox alignment="CENTER" layoutY="23.0" prefHeight="485.0" prefWidth="793.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lbl_Status" alignment="CENTER" text="Status" textFill="BLUE" />
+            <HBox fx:id="hBox_ProjectName" alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="200.0" text="Name of the Project" />
+                  <TextField fx:id="txtField_ProjectName" promptText="enter unique name" />
+                  <Region prefHeight="25.0" prefWidth="165.0" />
+                  <Button fx:id="btn_Done_ProjectName" mnemonicParsing="false" onAction="#btn_Done_ProjectName_Clicked" text="Done" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBox_SuperBuilt" alignment="CENTER" disable="true" spacing="10.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="200.0" text="Super Built Area" />
+                  <TextField fx:id="txtField_SuperBuilt" promptText="enter area in sq ft" />
+                  <Region prefHeight="25.0" prefWidth="165.0" />
+                  <Button fx:id="btn_Done_SuperBuilt" mnemonicParsing="false" onAction="#btn_Done_SuperBuilt_Clicked" text="Done" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBox_BuiltArea" alignment="CENTER" disable="true" spacing="10.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="200.0" text="Built Area" />
+                  <TextField fx:id="txtField_BuiltArea" promptText="enter area in sq ft" />
+                  <Region prefHeight="25.0" prefWidth="165.0" />
+                  <Button fx:id="btn_Done_BuiltArea" mnemonicParsing="false" onAction="#btn_Done_BuiltArea_Clicked" text="Done" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBox_ParkingLot" alignment="CENTER" disable="true" spacing="10.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="200.0" text="Parking Lot Area" />
+                  <TextField fx:id="txtField_ParkingLot" promptText="enter area in sq ft" />
+                  <Region prefHeight="25.0" prefWidth="165.0" />
+                  <Button fx:id="btn_Done_ParingLot" mnemonicParsing="false" onAction="#btn_Done_ParingLot_Clicked" text="Done" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBox_Location" alignment="CENTER" disable="true" spacing="10.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="200.0" text="Location" />
+                  <TextField fx:id="txtField_Location" promptText="enter 6 digit PIN CODE" />
+                  <Region prefHeight="25.0" prefWidth="165.0" />
+                  <Button fx:id="btn_Done_Location" mnemonicParsing="false" onAction="#btn_Done_Location_Clicked" text="Done" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBox_Floors" alignment="CENTER" disable="true" spacing="10.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="200.0" text="Number of Floors" />
+                  <TextField fx:id="txtField_Floors" promptText="enter number" />
+                  <Region prefHeight="25.0" prefWidth="165.0" />
+                  <Button fx:id="btn_Done_Floors" mnemonicParsing="false" onAction="#btn_Done_Floors_Clicked" text="Done" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBox_FloorPlan" alignment="CENTER" disable="true" spacing="10.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="Select Floor Number" />
+                        <ChoiceBox fx:id="choiceBox_FloorNumber" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Number of Bed rooms" />
+                        <TextField fx:id="txtField_BedRooms" promptText="enter number" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Number of Bath rooms" />
+                        <TextField fx:id="txtField_BathRooms" promptText="enter number" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Number of Extra rooms" />
+                        <TextField fx:id="txtField_ExtraActivities" promptText="enter number" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Area for Stairs" />
+                        <TextField fx:id="txtField_AreaForStairs" promptText="enter area in sq ft" />
+                     </children>
+                  </VBox>
+                  <Region prefHeight="40.0" prefWidth="33.0" />
+                  <Button fx:id="btn_Add_FloorPlan" mnemonicParsing="false" onAction="#btn_Add_FloorPlan_Clicked" text="Add Floor" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBox_DoneCreateProject" alignment="CENTER" disable="true" spacing="10.0">
+               <children>
+                  <Region prefHeight="25.0" prefWidth="578.0" />
+                  <Button fx:id="btn_Done_NewProject" mnemonicParsing="false" onAction="#btn_Done_NewProject_Clicked" prefHeight="25.0" prefWidth="130.0" text="Create Project" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
